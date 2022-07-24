@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ASP\\TaskApp\\WebApplication1\\TaskIt.csproj": {}
+    "E:\\ASP\\Tasking\\TaskApp\\WebApplication1\\TaskIt.csproj": {}
   },
   "projects": {
-    "E:\\ASP\\TaskApp\\WebApplication1\\TaskIt.csproj": {
+    "E:\\ASP\\Tasking\\TaskApp\\WebApplication1\\TaskIt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ASP\\TaskApp\\WebApplication1\\TaskIt.csproj",
+        "projectUniqueName": "E:\\ASP\\Tasking\\TaskApp\\WebApplication1\\TaskIt.csproj",
         "projectName": "TaskIt",
-        "projectPath": "E:\\ASP\\TaskApp\\WebApplication1\\TaskIt.csproj",
+        "projectPath": "E:\\ASP\\Tasking\\TaskApp\\WebApplication1\\TaskIt.csproj",
         "packagesPath": "C:\\Users\\kpan1\\.nuget\\packages\\",
-        "outputPath": "E:\\ASP\\TaskApp\\WebApplication1\\obj\\",
+        "outputPath": "E:\\ASP\\Tasking\\TaskApp\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

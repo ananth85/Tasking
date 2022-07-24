@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MnCDZ7HsT/6YVFbYcrXfOcBQkUWwFXNy7h4kyP/QfJrsP3R/lFOsUQPbWItfnWcuUIKDOkyim6JMLNNkfBF3lQ==",
+  "dgSpecHash": "9N2gdO9Ib3718HUvFFCLPf5g6LtywbVYOZYVpfaCKmmZbLiSFD2F+RQhG61rDj0JEgDWs96KXdDc01mfQuxR6g==",
   "success": true,
-  "projectFilePath": "E:\\ASP\\TaskApp\\WebApplication1\\TaskIt.csproj",
+  "projectFilePath": "E:\\ASP\\Tasking\\TaskApp\\WebApplication1\\TaskIt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kpan1\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\kpan1\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
