@@ -1,0 +1,29 @@
+﻿@page
+@model TaskIt.Pages.Issues.NewModel
+@using TaskIt.Models
+@{
+}
+<div class="mt-5">
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Issue.Title" class="form-label">Title </label>
+            <input asp-for="Issue.Title" class="form-control"/> 
+            <span asp-validation-for="Issue.Title"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Issue.Description" class="form-label">Description </label>
+            <textarea asp-for="Issue.Description" rows="3" class="form-control"></textarea>
+            <span asp-validation-for="Issue.Description"></span>
+
+        </div>
+        <div class="form-group">
+            <label asp-for="Issue.IssueType" class="form-label">Type </label>
+            <select asp-for="Issue.IssueType" asp-items="Html.GetEnumSelectList<IssueType>()" class="form-select"> </select>
+        </div>
+        <div class="form-group">
+            <label asp-for="Issue.Priority" class="form-label">Type </label>
+            <select asp-for="Issue.Priority" asp-items="Html.GetEnumSelectList<Priority>()" class="form-select"> </select>
+        </div>
+        <button class="wt-2 btn btn-primary">Submit</button>
+    </form>
+</div>

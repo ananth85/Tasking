@@ -1,0 +1,50 @@
+﻿@page
+@model IndexModel
+@using Humanizer
+@using TaskIt.Extensions
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="mt-5">
+    <a asp-page="/Issues/new"> Add Job</a>
+    @if(Model.Issues.Count()==0){
+        <p>No data found</p>
+    }else {
+        <div class="row g-0">
+            @foreach(var issue in Model.Issues){
+                <div class="card" style="width: 18rem;">
+                  @*<img class="card-img-top" src="..." alt="Card image cap">*@
+                  <div class="card-body">
+                    <h5 class="card-title"><a asp-page="/Issues/Detail" asp-route-id="@issue.Id" class="link-dark">@issue.Title</a></h5>
+                    <span class="@issue.Priority.ToCssClass()">@issue.Priority</span>
+                    <p class="card-text">@issue.Description</p>
+                    <div class="card-footer text-muted"> <small>@issue.Created.Humanize(utcDate:false)</small></div><br/>
+                    <a asp-page="/Issues/Detail" asp-route-id="@issue.Id" class="btn btn-primary">Details</a>
+                    <small>Running...</small>
+                  </div>
+                </div>
+            }
+
+
+        </div>
+    }
+    <hr />
+    <h3>History Jobs</h3>
+    @if(Model.IssuesToDay.Count() >0)
+    {
+        <div class="row g-0">
+        @foreach(var issue in Model.IssuesToDay){
+                <div class="card" style="width: 18rem;">
+                  @*<img class="card-img-top" src="..." alt="Card image cap">*@
+                  <div class="card-body">
+                    <h5 class="card-title"><a  class="link-dark">@issue.Title</a></h5>
+                    <span class="@issue.Priority.ToCssClass()">@issue.Priority</span>
+                    <p class="card-text">@issue.Description</p>
+                    <div class="card-footer text-muted"> <small>@issue.Created.Humanize(utcDate:false)</small></div>
+                  </div>
+                </div>
+            }
+            </div>
+    }
+</div>
